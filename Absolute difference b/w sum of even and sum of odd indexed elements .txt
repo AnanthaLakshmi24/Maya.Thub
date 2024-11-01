@@ -1,0 +1,10 @@
+t=int(input())
+l=list(map(int,input().split()))
+even_sum=0
+odd_sum=0
+for i in range(t):
+    if i%2==0:
+        even_sum=even_sum+l[i]
+    else:
+        odd_sum=odd_sum+l[i]
+print(abs(even_sum - odd_sum))
